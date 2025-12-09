@@ -1,9 +1,15 @@
+filename = "input.txt"
+
+with open(filename) as input:
+  n = 1
+  
+
 startWaarde = 50
 
 testWaarde = "L32"
 
-if testWaarde.find("L") != -1:
-  startWaarde = startWaarde + 32
-  print(startWaarde)
-elif testWaarde.find("R") != -1:
+if "L" in testWaarde:
   startWaarde = startWaarde - 32
+  print(startWaarde)
+elif "R" in testWaarde:
+  startWaarde = startWaarde + 32
